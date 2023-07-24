@@ -2,6 +2,23 @@ import {Card, Text} from '@nextui-org/react';
 import React from 'react';
 import {Flex} from '../styles/flex';
 import {Line} from "react-chartjs-2";
+import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend,
+} from 'chart.js'
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+
+)
 
 export const ActiveMembersCard = () => {
    return (
